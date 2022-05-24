@@ -1,0 +1,191 @@
+.autocheck-wrapper {
+  .third-section {
+    display: flex;
+    justify-content: center;
+    background-color: var(--white);
+    padding-bottom: 177px;
+    padding-top: 100px;
+
+    &__content-wrapper {
+      position: relative;
+      width: 100%;
+      margin: 0 30px;
+    }
+
+    &__label {
+      margin-bottom: 12px;
+    }
+
+    &__text {
+      margin-bottom: 48px;
+    }
+
+    &__cards {
+      display: flex;
+      gap: 15px;
+
+      .fr {
+        width: 50%;
+      }
+
+      &-item {
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 92px;
+        padding: 10px;
+        background-color: var(--white);
+        border: 1px solid var(--gray-400);
+        border-radius: 6px;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        color: var(--gray-850);
+        cursor: default;
+
+        &:hover {
+          box-shadow: 10px 9px 40px rgba(109, 133, 152, 0.2);
+          color: var(--blue-800);
+          border: 1px solid transparent;
+        }
+      }
+    }
+
+    &__input {
+      margin-top: 90px;
+      padding: 50px 35px;
+      border-radius: 16px;
+      background-color: var(--gray-200);
+
+      &-inputs {
+        position: relative;
+        display: flex;
+        height: 50px;
+        margin-top: 24px;
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 400;
+        color: var(--gray-700);
+
+        input {
+          padding: 10px;
+          text-transform: uppercase;
+
+          &::placeholder {
+            color: var(--gray-700);
+          }
+        }
+
+        .first-inps {
+          position: relative;
+          display: flex;
+          margin-right: 15px;
+          box-shadow: 1px 4px 15px rgba(54, 94, 125, 0.05);
+
+
+          &-finput {
+            border: 2px solid var(--gray-400);
+            border-right: 0;
+            border-radius: 6px 0 0 6px;
+            height: 50px;
+            max-width: 88px;
+
+            &-wrapper {
+              position: relative;
+
+              span {
+                display: block;
+                width: 2px;
+                height: 18px;
+                position: absolute;
+                top: 0;
+                right: 0;
+                transform: translateY(80%);
+                background: var(--gray-400);
+              }
+            }
+          }
+
+          &-sinput {
+            border: 2px solid var(--gray-400);
+            border-left: 0;
+            border-radius: 0 6px 6px 0;
+            max-width: 52px;
+          }
+        }
+
+        .second-inps {
+          display: flex;
+          width: 100%;
+          border-radius: 6px;
+          overflow: hidden;
+          box-shadow: 1px 4px 15px rgba(54, 94, 125, 0.05);
+          // max-width: 550px;
+
+          input {
+            display: flex;
+            width: 100%;
+            border: 2px solid var(--gray-400);
+            border-radius: 6px 0 0 6px;
+            border-right: 0;
+          }
+
+          button {
+            white-space: nowrap;
+            padding: 0 18px;
+            color: var(--white);
+            background-color: var(--blue-700);
+          }
+
+          .where-STS {
+            border-top: 2px solid var(--gray-400);
+            border-bottom: 2px solid var(--gray-400);
+          }
+        }
+
+        .autocheck-popups__STS {
+          bottom: 50px;
+          right: 475px;
+
+          &::before {
+            bottom: -15px;
+            border-top: 7px solid var(--white);
+          }
+        }
+      }
+    }
+
+    &__img-wrapper {
+      position: relative;
+    }
+
+    &__img {
+      position: relative;
+      pointer-events: none;
+      width: 380px;
+
+      img {
+        position: absolute;
+      }
+
+      &-car {
+        top: 14px;
+        left: 102px;
+        z-index: 2;
+      }
+
+      &-police {
+        top: -62px;
+        left: 348px;
+      }
+
+      &-sign {
+        top: -36px;
+        left: 303px;
+        z-index: 1;
+      }
+    }
+  }
+}

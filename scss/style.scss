@@ -1,0 +1,35 @@
+@import './first-section';
+@import './second-section';
+@import './third-section';
+@import './popups';
+
+.html-lock {
+  overflow: hidden;
+}
+
+.hide {
+  display: none;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+
+.mw1140 {
+  max-width: 1140px;
+}
+
+@media screen and (max-width: 1086px) {
+  .third-section__img-wrapper {
+    display: none !important;
+  }
+
+  .autocheck-popups__STS {
+    right: 100px !important;
+  }
+}
